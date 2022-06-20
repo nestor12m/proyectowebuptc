@@ -1,0 +1,158 @@
+*{
+    margin: 0px ;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: beige;
+}
+
+
+header{
+    height: 60px;
+    background-color: aqua;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+
+
+/*------------------------------------------------------------------------------------
+                                 seccion 1
+------------------------------------------------ ------------------------------------- */
+h2{
+    text-align: center;
+    margin-top: 100px;
+    border-bottom: 5px solid greenyellow;
+    width: 400px;
+    margin-left: 35%;
+    
+}
+.titulo{
+    background-color:white;
+    height: 50px;
+    margin-bottom: 20px;
+}
+.seccion-1{
+    background-image: url(../img/2.jpg);
+    background-size: cover;
+    height: 700px;
+    padding-top: 30px;
+}
+table{
+    border:solid 10px red;
+    margin: 0 auto;
+    margin-top: 50px;
+    
+}
+ th{
+     border:solid 5px rgb(30, 255, 0);
+     padding: 8px 12px;
+ }
+
+ tr{
+    border:solid 1px blue;
+ }
+
+ td{
+    border:solid 1px rgb(27, 27, 26);
+ }
+ .uno{
+    border:solid 5px rgb(255, 0, 128);
+    padding: 8px 12px;
+ }
+
+
+/*------------------------------------------------------------------------------------
+                   seccion galeria
+------------------------------------------------ ------------------------------------- */
+
+ .cont-galeria{
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     align-items: center;
+     margin-top: 50px;
+
+ }
+ .galeria-img {
+     margin-top: 10px;
+     margin-left: 20px;
+     width: 400px;
+     height: 300px;
+ }
+
+ .galeria-img img{
+    width: 400px;
+    height: 300px;
+ }
+ .imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+
+.agregar-imagen{
+    width: 65%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+
+.showImage{
+    transform: scale(1);
+}
+
+.show{
+    transform: translate(0);
+}
+
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    cursor: pointer;
+    font-size: 40px;
+}
+ /*------------------------------------------------------------------------------------
+                   seccion mapa mental
+------------------------------------------------ ------------------------------------- */
+ .mapa-mental{
+     background-color: rgba(204, 203, 203, 0.781);
+     height: 550px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+ }
+ .cont-mapa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+ }
+
+ .cont-mapa img{
+     height: 400px;
+     width: 80%;
+ }
+
+
+  /*------------------------------------------------------------------------------------
+                   seccion footer
+------------------------------------------------ ------------------------------------- */
+
+
+footer{
+    height: 200px;
+    background-color: blanchedalmond;
+}
