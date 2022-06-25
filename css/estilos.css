@@ -1,3 +1,11 @@
+
+:root{
+   --colortablatitulo:rgba(4, 135, 196, 0.795);
+   --colorlineas:rgb(17, 3, 82);
+   --colorheader:rgb(9, 214, 60);
+   --colorceldas:rgb(171, 173, 171);
+   --colorbordetable:black;
+}
 *{
     margin: 0px ;
     padding: 0px;
@@ -16,6 +24,78 @@ header{
     top:0;
     width: 100%;
 }
+
+
+
+.table-rwd {
+    font-size: .85em;
+    border: 1px solid rgba(181, 213, 144, 0.5);
+    color: #666;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 50px;
+}
+    .table-rwd td, .table-rwd th {
+      padding: .8em;
+      border-bottom: 1px solid rgba(181, 213, 144, 0.5); 
+    }
+    .table-rwd th {
+      background: #1A8CFF;
+      color: #fff;
+      font-weight: normal;
+      text-align: right; 
+    }
+    .table-rwd td {
+      text-align: right;
+     }
+      .table-rwd td:before {
+        content: "$ ";
+        color: #1A8CFF; 
+    }
+      .table-rwd td:after {
+        content: ".00"; 
+    }
+      .table-rwd td:first-of-type {
+        text-align: left; 
+    }
+        .table-rwd td:first-of-type:before {
+          content: ""; 
+        }
+        .table-rwd td:first-of-type:after {
+          content: ""; }
+    .table-rwd tr:hover {
+      background: rgba(181, 213, 144, 0.2); 
+    }
+    .table-rwd tr td:nth-child(2n) {
+      background: rgba(181, 213, 144, 0.2); 
+    }
+  
+  .table-container {
+    overflow-x: auto; }
+  
+  .table-rwd {
+    min-width: 900px; 
+}
+    .table-rwd td:first-child {
+      position: absolute;
+      background: #fff;
+      width: 8em; 
+    }
+    .table-rwd th:first-child {
+      width: 8em; 
+    }
+    .table-rwd tr:hover td:first-child {
+      background: #1A8CFF;
+      color: #fff; 
+    }
+    .table-rwd tr:nth-child(2) td:first-child {
+      box-shadow: 0 -2.7em 0 -6px #1A8CFF, -6px -2.7em 0 -6px #1A8CFF; 
+    }
+  
+
+
+     @media(min-width:900px){
 
 
 /*------------------------------------------------------------------------------------
@@ -40,26 +120,24 @@ h2{
     height: 700px;
     padding-top: 30px;
 }
-table{
+/* table{
     border:solid 10px red;
     margin: 0 auto;
     margin-top: 50px;
     
-}
+} */
  th{
-     border:solid 5px rgb(30, 255, 0);
+    
      padding: 8px 12px;
  }
 
- tr{
-    border:solid 1px blue;
- }
+
 
  td{
     border:solid 1px rgb(27, 27, 26);
  }
  .uno{
-    border:solid 5px rgb(255, 0, 128);
+    
     padding: 8px 12px;
  }
 
@@ -156,3 +234,5 @@ footer{
     height: 200px;
     background-color: blanchedalmond;
 }
+
+     }
