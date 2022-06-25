@@ -5,21 +5,37 @@
    --colorheader:rgb(9, 214, 60);
    --colorceldas:rgb(171, 173, 171);
    --colorbordetable:black;
+    --color_primary:#444cf7;
+    --color-title:#000;
+    --aligng-title:left;
+   --padding-conteiner: 100px 0;
+   --width-contenedor: 90%;
+   --max-width-contenedor:1200px;
+   --color-btn:#444cf7;
+   --color-text-btn:#fff;   
+   --padding-btn:20px 35px;
+   --wave:18em;
 }
+
 *{
     margin: 0px ;
     padding: 0px;
     box-sizing: border-box;
 }
 
-.body{
-    background-color: beige;
-}
+/* body{
+    font-family: 'DM Sans', sans-serif;
+    background-color: #ffffff;
+        opacity: 1;
+        background-image:  radial-gradient(#444CF7 0.7000000000000001px, transparent 0.7000000000000001px), radial-gradient(#444CF7 0.7000000000000001px, #E5E5F7 0.7000000000000001px);
+        background-size: 28px 28px;
+        background-position: 0 0,14px 14px;
+} */
 
 
 header{
     height: 60px;
-    background-color: aqua;
+    background-color: var(--colorheader);
     position: fixed;
     top:0;
     width: 100%;
@@ -41,7 +57,7 @@ p{
 h2{
     text-align: center;
     margin-top: 100px;
-    border-bottom: 5px solid greenyellow;
+    border-bottom: 5px solid rgb(255, 172, 47);
     width: 400px;
     margin-left: 35%;
     
@@ -143,7 +159,7 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 20px;
 
 }
 h3{
@@ -152,7 +168,7 @@ h3{
     
 }
 .galeria-img {
-    margin-top: 70px;
+    margin-top: 20px;
     margin-left: 20px;
     width: 400px;
     height: 300px;
@@ -200,8 +216,63 @@ h3{
    font-size: 40px;
 }
 
+
+/* -----------------------------------------------------------------------------------------------------
+                                 footer 
+----------------------------------------------------------------------------------------------------*/
+.footer-contenedor{
+    background-color:var(--colorheader);
+}
+.footer-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
    
-     @media(min-width:900px){
+}
+.footer-img{
+    height: 200px;
+}
+.footer-contact{
+    order:-1;
+}
+.footer-text{
+
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+
+}
+.footer-social{
+    display: flex;
+}
+.footer-iconos{
+    height: 45px;
+    width: 45px;
+    margin: 0 10px;
+    background-color: rgb(241, 236, 236);
+    border: 1px solid rgb(178, 180, 180);
+    border-radius: 100%;
+    
+    
+}
+
+.footer-copy{
+    text-align: center;
+    margin: 25px;
+    color: var(--color_primary);
+    font-weight: bold;
+    
+}
+.footer-copy::after{
+    content: " #termi";
+}
+
+   
+     @media(min-width:500px){
 
 
 /*------------------------------------------------------------------------------------
@@ -283,7 +354,7 @@ h3{
                    seccion mapa mental
 ------------------------------------------------ ------------------------------------- */
  .mapa-mental{
-     background-color: rgba(204, 203, 203, 0.781);
+     background-color: white;
      height: 550px;
      display: flex;
      justify-content: center;
@@ -307,9 +378,24 @@ h3{
 ------------------------------------------------ ------------------------------------- */
 
 
-footer{
-    height: 200px;
-    background-color: blanchedalmond;
+/* ----------------------.-------------------------------------------------------------------------------
+                                 Q  QUINTA SECCION  Cursos
+----------------------------------------------------------------------------------------------------*/
+
+.footer-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+.footer-contact:nth-child(2){
+    order:0;
+}
+.footer-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
      }
